@@ -1,0 +1,12 @@
+.DISABLEjumbotron-image {
+    max-width:200px;
+    width:100%;
+    vertical-align: middle;
+}
+
+.jumbotron-primary {
+    font-size: 2.0em;
+}
+.jumbotron-secondary {
+    font-size: .6em;
+}
