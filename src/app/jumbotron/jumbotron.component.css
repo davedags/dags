@@ -1,7 +1,10 @@
-.DISABLEjumbotron-image {
-    max-width:200px;
-    width:100%;
-    vertical-align: middle;
+.jumbotron {
+    height: auto;
+    margin-top: 51px;
+    #background-image: url('../../assets/logo-shadow.png');
+    #background-repeat: no-repeat;
+    #background-position: 10% 50%;
+
 }
 
 .jumbotron-primary {
@@ -9,4 +12,18 @@
 }
 .jumbotron-secondary {
     font-size: .6em;
+}
+.navbar {
+    margin: 0px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+/* Extra small devices (767px and down) */
+@media (max-width: 767px) {
+    .row.vertical-align {
+        display: block; /* Turn off the flexible box layout */
+    }
 }
