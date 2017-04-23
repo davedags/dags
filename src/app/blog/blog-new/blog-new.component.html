@@ -1,0 +1,35 @@
+<div class="container blog-new-container">
+    <div class="header">
+        <h4>New Blog</h4>
+    </div>
+    <form #blogForm="ngForm">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" class="form-control" placeholder="Title">
+        </div>
+
+        <div class="form-group">
+            <label for="slug">Slug</label>
+            <input id="slug" name="slug" type="text" class="form-control" placeholder="Slug">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input id="description" name="description" type="text" class="form-control" placeholder="Description">
+        </div>
+
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <textarea [(ngModel)]="body" (keyup)="updateOutput($event.target.value)" name="body" id="" cols="60" rows="30"></textarea>
+            </div>
+
+            <div class="col-md-6">
+                <div [innerHTML]="convertedText" class="rendered-article"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <button type="submit" class="btn btn-default">Save Blog</button>
+    </form>
+
+</div>

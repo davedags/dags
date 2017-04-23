@@ -1,0 +1,25 @@
+<div class="container blog-container">
+
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Slug</th>
+            <th>Published</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let blog of blogs">
+                <td>
+                    <img class="img-rounded img-responsive" src="" />
+                </td>
+                <td>{{ blog.title }}</td>
+                <td>{{ blog.slug }}</td>
+                <td>{{ blog.created_at }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <button routerLink="/blog/new" class="btn">New Blog Post</button>
+    </div>
+</div>
